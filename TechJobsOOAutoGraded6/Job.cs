@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 namespace TechJobsOOAutoGraded6
 {
 	public class Job
@@ -42,11 +43,30 @@ namespace TechJobsOOAutoGraded6
             return HashCode.Combine(Id);
         }
 
-            // TODO: Task 5: Generate custom ToString() method.
-                //Until you create this method, you will not be able to print a job to the console.
+        // TODO: Task 5: Generate custom ToString() method.
+        //Until you create this method, you will not be able to print a job to the console.
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Environment.NewLine);
+            sb.Append("ID: ").Append(Id).Append(Environment.NewLine);
+            sb.Append("Name: ").Append(string.IsNullOrEmpty(Name) ? "Data not available" : Name).Append(Environment.NewLine);
+            sb.Append("Employer: ").Append(string.IsNullOrEmpty(EmployerName?.Value) ? "Data not available" : EmployerName.Value).Append(Environment.NewLine);
+            sb.Append("Location: ").Append(string.IsNullOrEmpty(EmployerLocation?.Value) ? "Data not available" : EmployerLocation.Value).Append(Environment.NewLine);
+            sb.Append("Position Type: ").Append(string.IsNullOrEmpty(JobType?.Value) ? "Data not available" : JobType.Value).Append(Environment.NewLine);
+            sb.Append("Core Competency: ").Append(string.IsNullOrEmpty(JobCoreCompetency?.Value) ? "Data not available" : JobCoreCompetency.Value).Append(Environment.NewLine);
+            sb.Append(Environment.NewLine);
+
+            return sb.ToString();
+        }
 
 
-        
+
+
+
+
+
     }
 }
 
