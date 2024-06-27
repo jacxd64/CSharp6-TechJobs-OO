@@ -5,7 +5,6 @@ namespace TechJobsOO.Tests
 	public class TestTask2
 	{
         //This class tests the setup of Location, CoreCompetency, and PositionType Classes.
-
         // Testing Location --------------------------------------------------------
 
         

@@ -67,8 +67,7 @@ namespace TechJobs.Tests
                                     "Employer: ACME" + Environment.NewLine +
                                     "Location: Desert" + Environment.NewLine +
                                     "Position Type: Quality control" + Environment.NewLine +
-                                    "Core Competency: Persistence" + Environment.NewLine +
-                                    Environment.NewLine;
+                                    "Core Competency: Persistence" + Environment.NewLine;
 
             string actualOutput = job3.ToString();
             Assert.AreEqual(expectedOutput, actualOutput, $"Expected:\n{expectedOutput}\nActual:\n{actualOutput}");
@@ -83,11 +82,10 @@ namespace TechJobs.Tests
                                     "Employer: Data not available" + Environment.NewLine +
                                     "Location: Data not available" + Environment.NewLine +
                                     "Position Type: Data not available" + Environment.NewLine +
-                                    "Core Competency: Data not available" + Environment.NewLine +
-                                    Environment.NewLine;
+                                    "Core Competency: Data not available" + Environment.NewLine;
 
             string actualOutput = jobWithEmptyFields.ToString();
-            Assert.AreEqual(expectedOutput, actualOutput, $"Expected:\n{expectedOutput}\nActual:\n{actualOutput}");
+            Assert.AreEqual(expectedOutput, actualOutput, $"Expected:\n {expectedOutput}\nActual:\n{actualOutput}");
         }
 
     }

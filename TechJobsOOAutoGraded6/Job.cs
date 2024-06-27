@@ -56,7 +56,7 @@ namespace TechJobsOOAutoGraded6
             sb.Append("Location: ").Append(string.IsNullOrEmpty(EmployerLocation?.Value) ? "Data not available" : EmployerLocation.Value).Append(Environment.NewLine);
             sb.Append("Position Type: ").Append(string.IsNullOrEmpty(JobType?.Value) ? "Data not available" : JobType.Value).Append(Environment.NewLine);
             sb.Append("Core Competency: ").Append(string.IsNullOrEmpty(JobCoreCompetency?.Value) ? "Data not available" : JobCoreCompetency.Value).Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
+            //sb.Append(Environment.NewLine);
 
             return sb.ToString();
         }
